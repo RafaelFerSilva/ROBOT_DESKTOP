@@ -10,14 +10,6 @@ Resource    ${EXECDIR}/resources/locators/Home/home_locators.robot
 
 *** Keywords ***
 
-Clicar no menu do usuário
-    
-    Click If Element Is Visible    ${USER_MENU}
-
-Verificar se a tela de login está visível
-    
-    Wait Until Element Is Visible    ${SECAO_LOGIN}
-
 Validar se o campo de senha está visível na tela de login
     
     Wait Until Element Is Visible    ${INPUT_PASSWORD}
@@ -34,12 +26,12 @@ Adicionar uma valor no input de senha
     Input Password    ${INPUT_PASSWORD}    ${password}
     Textfield Value Should Be    ${INPUT_PASSWORD}    ${password}
 
-Clicar no botão Acessar a Orbia na tela de login
+Clicar no botão ENTRAR
     
     Click If Element Is Visible    ${BTN_LOGIN} 
 
 Verificar se a mensagem de erro para validar login e senha está visível na tela de login
     [Arguments]    ${mensagem_erro}
 
-    ${str}=	    Replace String    ${ORBIA_LABEL_ERROR_LOG_ON}	$$    ${mensagem_erro}
+    ${str}=	    Replace String    ${ERROR_INFO}	$$    ${mensagem_erro}
     Wait Until Element Is Visible    ${str}

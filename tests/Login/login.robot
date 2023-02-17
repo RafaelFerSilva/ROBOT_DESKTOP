@@ -13,18 +13,17 @@ Suite Teardown    Fechar o Browser
 
 *** Test Cases ***
 
-Deve ser exibido um erro quando um usuário não cadastrado tenta logar no site da Orbia
-    [Setup]    Acessar a tela de login do site da Orbia
+Deve ser exibido um erro quando um usuário não cadastrado tenta logar no site da Alura
 
     ${email}=    FakerLibrary.Email
     ${password}=    FakerLibrary.Password
     
     Adicionar dados para login    ${email}    ${password}
-    Clicar no botão Acessar a Orbia e validar se o alert de erro foi exibido na tela    Verifique login e senha para continuar
+    Clicar no botão ENTRAR e validar se o alert de erro foi exibido na tela    E-mail ou senha incorretos.
 
-Cenário: Deve ser exibido um erro quando um usuário não cadastrado tenta logar no site da Orbia
+Cenário: Deve ser exibido um erro quando um usuário não cadastrado tenta logar no site da Alura
     
     Dado o usuário esteja na tela de login
-    Quando adicionar dados de um usuário não cadastrado no site da Orbia
-    E Clicar no botão Acessar a Orbia na tela de login
+    Quando adicionar dados de um usuário não cadastrado no site da Alura
+    E Clicar no botão ENTRAR
     Então o alert de erro para usuários não cadastrados deve ser exibido na tela

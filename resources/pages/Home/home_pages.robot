@@ -11,8 +11,8 @@ Resource    ${EXECDIR}/resources/locators/Home/home_locators.robot
 
 Validar se o menu de navegação está visivel na home page
         
-    Wait Until Element Is Visible    ${MENU_NAVEGACAO}
+    Wait Until Element Is Visible    ${LOGIN_SECTION}
 
-Validar se o menu do usuário está visível
-    
-    Wait Until Element Is Visible    ${USER_MENU}
+Validar o título da seção de login está visível 
+
+  Wait Until Element Is Visible     ${LOGIN_SECTION_TITLE} 
