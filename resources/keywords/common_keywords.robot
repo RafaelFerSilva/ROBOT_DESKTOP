@@ -4,16 +4,16 @@ Documentation    Arquivo de keywords genéricas que podem ser utilizadas em dive
 Library    SeleniumLibrary
 
 *** Variables ***
-${LOGIN URL}              https://www.orbia.ag/
+${LOGIN URL}              https://cursos.alura.com.br/
 ${BROWSER}                Chrome
 ${BROWSER_OPTIONS}        add_experimental_option('excludeSwitches', ['enable-logging']);add_argument('--disable-dev-shm-usage');add_argument("--disable-popup-blocking");add_argument("--ignore-certificate-errors")
 
 *** Keywords ***
 
-Abrir o navegador no site da Orbia
+Abrir o navegador no site da Alura
     Open Browser    ${LOGIN URL}    ${BROWSER}    options=${BROWSER_OPTIONS}
     Maximize Browser Window
-    Title Should Be    Orbia - Você e o agronegócio acontecem aqui.
+    Title Should Be    Login | Alura - Cursos online de tecnologia
 
 Fechar o Browser 
     Close Browser

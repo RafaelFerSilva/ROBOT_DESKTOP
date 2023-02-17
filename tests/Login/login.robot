@@ -8,7 +8,7 @@ Library    FakerLibrary    locale=pt_BR
 Resource    ${EXECDIR}/resources/keywords/common_keywords.robot
 Resource    ${EXECDIR}/resources/keywords/Login/login_keywords.robot
 
-Suite Setup    Abrir o navegador no site da Orbia    
+Suite Setup    Abrir o navegador no site da Alura    
 Suite Teardown    Fechar o Browser 
 
 *** Test Cases ***
