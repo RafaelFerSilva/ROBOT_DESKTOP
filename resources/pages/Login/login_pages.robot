@@ -33,5 +33,5 @@ Clicar no botão ENTRAR
 Verificar se a mensagem de erro para validar login e senha está visível na tela de login
     [Arguments]    ${mensagem_erro}
 
-    ${str}=	    Replace String    ${ERROR_INFO}	$$    ${mensagem_erro}
+    ${str}=	    Replace String    ${ERROR_INFO}	  $$    ${mensagem_erro}
     Wait Until Element Is Visible    ${str}
