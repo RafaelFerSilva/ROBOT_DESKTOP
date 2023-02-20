@@ -4,7 +4,6 @@ Documentation    Keywords para login
 Library    FakerLibrary    locale=pt_BR
 
 Resource    ${EXECDIR}/resources/pages/Login/login_pages.robot
-Resource    ${EXECDIR}/resources/pages/Home/home_pages.robot
 
 *** Keywords ***
 

@@ -6,7 +6,6 @@ Library    String
 
 Resource    ${EXECDIR}/resources/keywords/common_keywords.robot
 Resource    ${EXECDIR}/resources/locators/login/login_locators.robot
-Resource    ${EXECDIR}/resources/locators/Home/home_locators.robot
 
 *** Keywords ***
 
@@ -33,5 +32,5 @@ Clicar no botão ENTRAR
 Verificar se a mensagem de erro para validar login e senha está visível na tela de login
     [Arguments]    ${mensagem_erro}
 
-    ${str}=	    Replace String    ${ERROR_INFO}	$$    ${mensagem_erro}
+    ${str}=	    Replace String    ${ERROR_INFO}	  $$    ${mensagem_erro}
     Wait Until Element Is Visible    ${str}
