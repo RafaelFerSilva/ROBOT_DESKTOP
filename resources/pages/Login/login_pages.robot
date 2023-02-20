@@ -6,7 +6,6 @@ Library    String
 
 Resource    ${EXECDIR}/resources/keywords/common_keywords.robot
 Resource    ${EXECDIR}/resources/locators/login/login_locators.robot
-Resource    ${EXECDIR}/resources/locators/Home/home_locators.robot
 
 *** Keywords ***
 
