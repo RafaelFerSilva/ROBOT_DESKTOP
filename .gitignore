@@ -130,3 +130,4 @@ dmypy.json
 
 /reports
 .vscode
+.idea

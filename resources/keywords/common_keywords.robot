@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation    Arquivo de keywords genéricas que podem ser utilizadas em diversas ocasiões
 
-Library    SeleniumLibrary
+Library    Browser
 
 *** Variables ***
 ${LOGIN URL}              https://cursos.alura.com.br/

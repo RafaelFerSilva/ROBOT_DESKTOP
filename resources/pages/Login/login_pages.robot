@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation    Arquivo de keywords relacionadas ao page objetc da página de login
 
-Library    SeleniumLibrary
+Library    Browser
 Library    String
 
 Resource    ${EXECDIR}/resources/keywords/common_keywords.robot
