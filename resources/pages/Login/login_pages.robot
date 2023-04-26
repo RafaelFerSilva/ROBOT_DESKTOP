@@ -16,14 +16,14 @@ Validar se o campo de senha está visível na tela de login
 Adicionar um e-mail no input para login
     [Arguments]    ${email}
 
-    Input Text If Element Is Visible    ${INPUT_EMAIL}    ${email}
-    Textfield Value Should Be    ${INPUT_EMAIL}    ${email}
+    Fill Text    ${INPUT_EMAIL}    ${email}
+    Get Text    ${INPUT_EMAIL}      ==    ${email}
 
-Adicionar uma valor no input de senha
+Adicionar um valor no input de senha
     [Arguments]   ${password}
 
-    Input Password    ${INPUT_PASSWORD}    ${password}
-    Textfield Value Should Be    ${INPUT_PASSWORD}    ${password}
+    Fill Secret    ${INPUT_PASSWORD}    $password
+    Get Text    ${INPUT_PASSWORD}      ==    ${password}
 
 Clicar no botão ENTRAR
     

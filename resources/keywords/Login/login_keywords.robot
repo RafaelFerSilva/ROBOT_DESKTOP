@@ -7,17 +7,11 @@ Resource    ${EXECDIR}/resources/pages/Login/login_pages.robot
 
 *** Keywords ***
 
-Adicionar uma senha no input para login
-    [Arguments]    ${password}
-    
-    Validar se o campo de senha está visível na tela de login
-    Adicionar uma valor no input de senha    ${password}
-
 Adicionar dados para login
     [Arguments]    ${email}    ${password}
 
     Adicionar um e-mail no input para login    ${email}
-    Adicionar uma senha no input para login    ${password}
+    Adicionar um valor no input de senha    ${password}
 
 Clicar no botão ENTRAR e validar se o alert de erro foi exibido na tela
     [Arguments]    ${mensagem_erro}
