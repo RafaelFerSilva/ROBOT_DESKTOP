@@ -5,7 +5,7 @@ Library    Browser
 
 *** Variables ***
 ${LOGIN URL}              https://cursos.alura.com.br/
-${BROWSER}                Chrome
+${BROWSER}                chromium
 ${BROWSER_OPTIONS}        add_experimental_option('excludeSwitches', ['enable-logging']);add_argument('--disable-dev-shm-usage');add_argument("--disable-popup-blocking");add_argument("--ignore-certificate-errors")
 
 *** Keywords ***
