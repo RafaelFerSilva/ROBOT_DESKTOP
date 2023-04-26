@@ -19,15 +19,3 @@ Abrir o navegador no site da Alura
 
 Fechar o Browser 
     Close Browser
-
-Mouse Over If Element Is Visible
-    [Arguments]     ${element_locator}
-
-    Wait Until Element Is Visible    ${element_locator}
-    Mouse Over    ${element_locator} 
-
-Click If Element Is Visible
-    [Arguments]     ${element_locator}
-
-    Mouse Over If Element Is Visible    ${element_locator}
-    Click Element    ${element_locator}

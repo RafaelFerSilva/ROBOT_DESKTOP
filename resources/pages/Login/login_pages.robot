@@ -27,7 +27,7 @@ Adicionar um valor no input de senha
 
 Clicar no botão ENTRAR
     
-    Click If Element Is Visible    ${BTN_LOGIN} 
+    Click    ${BTN_LOGIN} 
 
 Verificar se a mensagem de erro para validar login e senha está visível na tela de login
     [Arguments]    ${mensagem_erro}
