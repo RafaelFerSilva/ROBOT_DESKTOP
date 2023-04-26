@@ -9,10 +9,6 @@ Resource    ${EXECDIR}/resources/locators/login/login_locators.robot
 
 *** Keywords ***
 
-Validar se o campo de senha está visível na tela de login
-    
-    Wait Until Element Is Visible    ${INPUT_PASSWORD}
-
 Adicionar um e-mail no input para login
     [Arguments]    ${email}
 
@@ -32,5 +28,4 @@ Clicar no botão ENTRAR
 Verificar se a mensagem de erro para validar login e senha está visível na tela de login
     [Arguments]    ${mensagem_erro}
 
-    ${str}=	    Replace String    ${ERROR_INFO}	  $$    ${mensagem_erro}
-    Wait Until Element Is Visible    ${str}
+    Get Text    ${ERROR_INFO}    ==     ${mensagem_erro}

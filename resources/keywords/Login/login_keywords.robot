@@ -20,7 +20,7 @@ Clicar no botão ENTRAR e validar se o alert de erro foi exibido na tela
     Verificar se a mensagem de erro para validar login e senha está visível na tela de login    ${mensagem_erro}
 
 o usuário esteja na tela de login
-    Title Should Be    Login | Alura - Cursos online de tecnologia
+    Get Title   ==  Login | Alura - Cursos online de tecnologia
 
 adicionar dados de um usuário não cadastrado no site da Alura
     
